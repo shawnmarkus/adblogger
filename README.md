@@ -1,6 +1,6 @@
 Here is the updated `README.md` with a dedicated **Core Dependencies** section that includes the Rust crates used to power the backend, so anyone contributing to or building your project knows exactly what makes it tick.
 
-# ⬡ ADBlogger v2.0 — Command Center
+# ⬡ ADB-logger v2.0 — Command Center
 
 NetSpy is a Android network monitor tool built with **Rust** and **Tauri v2**. It connects directly to your Android device via ADB to capture, parse, and analyze application network traffic, API calls, and security risks in real-time, all within a lightning-fast native desktop application.
 
