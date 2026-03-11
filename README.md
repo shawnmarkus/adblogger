@@ -1,22 +1,12 @@
 Here is the updated `README.md` with a dedicated **Core Dependencies** section that includes the Rust crates used to power the backend, so anyone contributing to or building your project knows exactly what makes it tick.
 
-````markdown
 # ⬡ NetSpy v2.0 — Command Center
 
-NetSpy is a Wireshark-grade Android network monitor built with **Rust** and **Tauri v2**. It connects directly to your Android device via ADB to capture, parse, and analyze application network traffic, API calls, and security risks in real-time, all within a lightning-fast native desktop application.
+NetSpy is a Android network monitor tool built with **Rust** and **Tauri v2**. It connects directly to your Android device via ADB to capture, parse, and analyze application network traffic, API calls, and security risks in real-time, all within a lightning-fast native desktop application.
 
 ---
 
-## ✨ Features
 
-- **Live Packet Inspector:** View HTTP, HTTPS, DNS, TCP, and UDP traffic in real-time.
-- **Kernel-Level Connections:** View live TCP/UDP socket tables and app-specific bandwidth.
-- **TCP Stream Follow:** Group packets by connection flow to see full request/response chains.
-- **Security Alerts:** Automated detection of trackers, high-risk data exfiltration, and sensitive payloads.
-- **Live Interactive Graphs:** Real-time bandwidth, packet rate, and risk analysis metrics.
-- **Zero Overhead:** Powered by a highly optimized Rust backend with a Vanilla JS frontend.
-
----
 
 ## 🧱 Core Dependencies
 
@@ -48,7 +38,6 @@ The easiest way to install dependencies on macOS is using [Homebrew](https://bre
 # Install Node, Rust, and ADB
 brew install node rust android-platform-tools
 ```
-````
 
 ### 🪟 Windows
 
