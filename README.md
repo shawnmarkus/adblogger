@@ -67,7 +67,7 @@ sudo apt install libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev
 1. **Clone the repository and navigate into it:**
 
 ```bash
-git clone [https://github.com/yourusername/netspy-tauri.git](https://github.com/yourusername/netspy-tauri.git)
+git clone https://github.com/shawnmarkus/adblogger
 cd netspy-tauri
 
 ```
