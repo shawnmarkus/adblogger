@@ -1,7 +1,7 @@
 mod adb;
 mod parser;
 
-use tauri::{AppHandle, Emitter, Manager, Runtime};
+use tauri::{AppHandle, Emitter, Runtime};
 use tokio::io::{AsyncBufReadExt, BufReader};
 use std::sync::Arc;
 use tokio::sync::Mutex;

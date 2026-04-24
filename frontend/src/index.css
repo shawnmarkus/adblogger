@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Rajdhani:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #030b10;
+    color: #c0dce8;
+    font-family: "Rajdhani", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Scanline CRT overlay */
+  #root::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 231, 0.015) 2px,
+      rgba(0, 255, 231, 0.015) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #030b10;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #12304a;
+    border-radius: 3px;
+  }
+}
+
+@layer utilities {
+  .font-mono { font-family: "JetBrains Mono", monospace; }
+  .font-ui   { font-family: "Rajdhani", sans-serif; }
+}
+
+/* Protocol row colour bars */
+.row-HTTP  td:first-child { border-left: 2px solid #00e676; }
+.row-HTTPS td:first-child { border-left: 2px solid #00b8d4; }
+.row-DNS   td:first-child { border-left: 2px solid #aa88ff; }
+.row-TLS   td:first-child { border-left: 2px solid #7c4dff; }
+.row-TCP   td:first-child { border-left: 2px solid #40c4ff; }
+.row-UDP   td:first-child { border-left: 2px solid #b2ff59; }
+
+.risk-critical td { background: rgba(255,51,85,0.05); }
+.risk-critical td:first-child { border-left-color: #ff3355; }
+.risk-high td     { background: rgba(255,102,0,0.04); }
+.risk-high td:first-child { border-left-color: #ff6600; }
+
+tr.selected td { background: rgba(0,255,231,0.08) !important; }
+
+tr:hover td { background: rgba(0,255,231,0.03); }
